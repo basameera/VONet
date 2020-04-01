@@ -1,5 +1,6 @@
 import numpy as np
 
+# https://github.com/pulkitag/pycaffe-utils/blob/master/rot_utils.py#L174
 
 def Rt2T(R, t):
     """Construct 4x4 Transformation matrix
