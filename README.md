@@ -18,9 +18,14 @@
 
 https://pytorch.org/get-started/previous-versions/
 
-#### CUDA 9.2
-`pip install torch==1.3.0 torchvision==0.4.1 -f https://download.pytorch.org/whl/torch_stable.html`
+**CUDA 9.0**
 
-## Change Pillow version
+`conda install pytorch==1.1.0 torchvision==0.3.0 cudatoolkit=9.0 -c pytorch`
 
-`pip install Pillow==6.0.0`
+### Change Pillow version
+
+`conda install Pillow==6.0.0`
+
+### skylynx
+
+`pip install skylynx`

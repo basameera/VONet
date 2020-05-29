@@ -1,7 +1,16 @@
 from tools import linalg as la
 import numpy as np
 
+from skylynx.utils import cli_args
+
 if __name__ == "__main__":
+    cli_params = dict(task=0,
+                      length=10
+                      )
+
+    args = cli_args(cli_params)
+    task = args['task']
+
     R = np.arange(9).reshape(3, 3)
     print(R)
 
@@ -19,4 +28,4 @@ if __name__ == "__main__":
     T_est = la.Rt2T(R, t)
     print(T_est)
 
-    assert(T.all()==T_est.all())
+    assert(T.all() == T_est.all())
